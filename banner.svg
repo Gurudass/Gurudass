@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="240">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17" />
+      <stop offset="50%" stop-color="#0d1322" />
+      <stop offset="100%" stop-color="#070a10" />
+    </linearGradient>
+    
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <radialGradient id="glow-cyan" cx="15%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow-indigo" cx="85%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#334155" stroke-width="0.5" stroke-opacity="0.25" />
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="900" height="240" rx="16" fill="url(#bg-grad)" stroke="#1e293b" stroke-width="1.5" />
+  
+  <!-- Grid overlay -->
+  <rect width="900" height="240" rx="16" fill="url(#grid)" />
+
+  <!-- Ambient Glows -->
+  <rect width="900" height="240" rx="16" fill="url(#glow-cyan)" />
+  <rect width="900" height="240" rx="16" fill="url(#glow-indigo)" />
+
+  <!-- Accent Top Border Glow Line -->
+  <path d="M 16 1.5 L 884 1.5" stroke="url(#accent-grad)" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Content -->
+  <g transform="translate(50, 45)">
+    <!-- Status Badge -->
+    <g transform="translate(0, 0)">
+      <rect width="180" height="26" rx="13" fill="#1e293b" fill-opacity="0.75" stroke="#334155" stroke-width="1" />
+      <circle cx="14" cy="13" r="4.5" fill="#10b981" />
+      <circle cx="14" cy="13" r="7" fill="#10b981" fill-opacity="0.3" />
+      <text x="28" y="17" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" letter-spacing="0.5">OPEN FOR INNOVATION</text>
+    </g>
+
+    <!-- Name Heading -->
+    <text x="0" y="70" fill="url(#text-grad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.8">GURU DAS</text>
+
+    <!-- Subtitle Role -->
+    <text x="2" y="102" fill="url(#accent-grad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="600" letter-spacing="0.2">Senior Full-Stack &amp; Generative AI Engineer</text>
+    
+    <!-- Meta Location & Company -->
+    <text x="2" y="125" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="400">Technical Lead @ Ikontel Solutions &nbsp;•&nbsp; Swiggy &amp; Enterprise AI Platforms &nbsp;•&nbsp; Bangalore, India</text>
+
+    <!-- Tech Pills -->
+    <g transform="translate(0, 142)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="78" height="22" rx="6" fill="#1e293b" fill-opacity="0.9" stroke="#38bdf8" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="39" y="15" fill="#38bdf8" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">FastAPI</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(86, 0)">
+        <rect width="84" height="22" rx="6" fill="#1e293b" fill-opacity="0.9" stroke="#60a5fa" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="42" y="15" fill="#60a5fa" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">React.js</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(178, 0)">
+        <rect width="138" height="22" rx="6" fill="#1e293b" fill-opacity="0.9" stroke="#a78bfa" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="69" y="15" fill="#a78bfa" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">LLMs &amp; RAG Pipelines</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(324, 0)">
+        <rect width="140" height="22" rx="6" fill="#1e293b" fill-opacity="0.9" stroke="#818cf8" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="70" y="15" fill="#818cf8" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Whisper Voice Bots</text>
+      </g>
+      <!-- Pill 5 -->
+      <g transform="translate(472, 0)">
+        <rect width="146" height="22" rx="6" fill="#1e293b" fill-opacity="0.9" stroke="#34d399" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="73" y="15" fill="#34d399" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Distributed Systems</text>
+      </g>
+    </g>
+  </g>
+</svg>
